@@ -1,0 +1,117 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --gold: #e1be67;
+    --white: #ffffff;
+    --black: #111;
+    --grayblack: #333;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.separator {
+    background-color: var(--gold);
+    border: 1px solid var(--gold);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+.btn {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.center-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*animatie sageata*/
+
+.arrow {
+    animation: sageata 3s infinite;
+}
+
+@keyframes sageata {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/*Section 1*/
+
+.hero-section {
+    background: url(img/hero-section-background.jpg);
+    background-size: cover;
+    background-color: #111;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
