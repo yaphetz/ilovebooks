@@ -1,3 +1,5 @@
+/*BASE CSS*/
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -81,10 +83,13 @@ h3 {
     color: var(--black);
 }
 
-.center-btn {
+.center-btn-mobile {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/*END BASE CSS*/
 
 
 /*animatie sageata*/
@@ -114,4 +119,144 @@ h3 {
     background-color: #111;
     padding-top: 20px;
     padding-bottom: 80px;
+}
+
+.hero-section p,
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/*ECHIPA SECTION*/
+
+.echipa-section {
+    padding: 100px 0;
+}
+
+.basic {
+    display: block;
+    width: 100%;
+}
+
+.people-column {
+    margin-bottom: 20px;
+}
+
+
+/*END ECHIPA SECTION*/
+
+
+/*AVANTAJE SECTION*/
+
+.avantaje-section {
+    padding: 100px 0;
+    background-color: #333;
+}
+
+.avantaje-section p {
+    color: #fff;
+}
+
+.avantaje-section .separator {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.check-icon {
+    margin-right: 10px;
+    width: 24px;
+    height: auto;
+    float: left;
+}
+
+.avantaje-column {
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid var(--gold);
+}
+
+
+/*END AVANTAJE SECTION*/
+
+
+/*FOOTER SECTION*/
+
+.footer-section {
+    background-color: #111;
+    padding: 30px 0 10px 0;
+}
+
+.footer-section a {
+    color: #fff;
+}
+
+.footer-section p {
+    color: rgb(209, 209, 209);
+    font-size: 14px;
+}
+
+
+/*END FOOTER SECTION*/
+
+
+/*COPYRIGHT SECTION*/
+
+.copyright-section {
+    padding: 10px 0 0;
+    background-color: #333;
+}
+
+.copyright-section p {
+    color: rgb(209, 209, 209);
+    font-size: 12px;
+}
+
+.copyright-section a {
+    color: var(--gold);
+}
+
+
+/*END COPYRIGHT SECTION*/
+
+.gdpr-section {
+    padding: 100px 0;
+}
+
+@media screen and (min-device-width: 768px) {
+    .avantaje-column {
+        height: 170px;
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    .hero-section p,
+    h1,
+    h2,
+    h3 {
+        text-align: left;
+    }
+    .hero-section .separator {
+        margin-left: 0;
+        width: 100%;
+        height: 1px;
+    }
+    .arrow {
+        display: none;
+    }
+    .center-btn-mobile {
+        margin-left: 0;
+    }
+    .avantaje-column {
+        height: 120px;
+        margin-bottom: 20px;
+        padding: 30px;
+        border: 1px solid var(--gold);
+    }
+    .vertical-align {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
